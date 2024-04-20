@@ -1,7 +1,10 @@
 # Testbeds
 
+<img src="./assets/cover.jpeg" alt="yardman" style="max-width:600px;"/>
+
 A collection of ready maid testbeads in various programing languages that is
 usefull as a started kit for training in testing software.
+
 
 ## Availabe test beads
 
