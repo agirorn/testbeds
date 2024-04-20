@@ -6,7 +6,7 @@ A collection of ready maid testbeads in various programing languages that is
 usefull as a started kit for training in testing software.
 
 
-## Availabe test beads
+## Availabe testbeads
 
 * Rust
   - unit-testing
