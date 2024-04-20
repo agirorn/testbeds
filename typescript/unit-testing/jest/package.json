@@ -1,0 +1,19 @@
+{
+  "name": "unit-testing-wihte-jest",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev:exec": "clear && pnpm exec jest",
+    "dev": "yardman '*.json' 'jest.config.*' 'src/*' 'tests/*' 'pnpm run --silent dev:exec'",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^20.12.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
