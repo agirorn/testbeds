@@ -1,0 +1,38 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint",
+    "start": "npm run build && node ./dist/index.js",
+    "dev-start": "yardman tsconfig.json package.json eslint.config.mjs 'src/*' 'src/**/*' 'tests/*' 'tests/**/*' 'yarn dev-start:exec'",
+    "dev-start:exec": "clear && yarn build && clear && yarn start",
+    "dev": "yardman tsconfig.json package.json eslint.config.mjs 'src/*' 'src/**/*' 'tests/*' 'tests/**/*' 'yarn dev:exec'",
+    "dev:exec": "clear && yarn test && yarn lint",
+    "test": "jest"
+  },
+  "author": "Ægir Örn Símonarson<agirorn@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.5",
+    "eslint-config-prettier": "^9.1.0",
+    "graphql": "^16.9.0",
+    "prettier-eslint": "^16.3.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^20.14.11",
+    "eslint": "^9.7.0",
+    "eslint-cli": "^1.1.1",
+    "eslint-config-canonical": "^43.0.14",
+    "eslint-plugin-prettier": "^5.2.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.17.0"
+  }
+}
